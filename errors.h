@@ -1,0 +1,11 @@
+#pragma once
+
+typedef enum {
+	NO_ERRORS,
+	INCORRECT_COMMAND_LINE_ARGUMENTS_ERROR,
+	FILE_NOT_FOUND_ERROR,
+	INCORRECT_INPUT_DATA_ERROR,
+	NOT_ENOUGH_MEMORY_ERROR,
+} Errors;
+
+int handleErrors(Errors error);
